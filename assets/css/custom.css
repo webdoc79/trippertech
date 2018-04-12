@@ -7,23 +7,23 @@
 /* --------------------------------------------------------- */
 
 #home-slide-1 {
-    opacity: 0.5;
-    background-image: url(../images/Home_slide1.jpg);
+    /* opacity: 0.5; */
+    background-image: url(../images/mainslides/slide1.jpg);
 }
 
 #home-slide-2 {
-    opacity: 0.7;
-    background-image: url(../images/Home_slide2.jpg);
+    opacity: 0.5;
+    background-image: url(../images/mainslides/slide2.jpg);
 }
 
 #home-slide-3 {
     opacity: 0.5;
-    background-image: url(../images/Home_slide3.jpg);
+    background-image: url(../images/mainslides/Home_slide1.jpg);
 }
 
 #home-slide-4 {
     opacity: 0.5;
-    background-image: url(../images/Home_slide4.jpg);
+    background-image: url(../images/mainslides/slide4.jpg);
 }
 
 
