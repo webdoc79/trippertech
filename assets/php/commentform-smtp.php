@@ -35,13 +35,13 @@ if( isset($_POST['submit']) ) {
     
     $content = '<html><head><style>body { font-family: Verdana; font-size: 12px; }</style></head><body>';
     $content .= "$logo
-New mail from:<br><br>
+New mail from: Tripper Tech Web Portal<br><br>
 Name: $name <br>
-Email: $email <br>
-IP: $ip_address <br><br>
+Email: $email <br><br>
 
-Message:<br>".nl2br($message)."
-
+Message:<br>".nl2br($message)."<br><br>
+Regards,<br>
+Team Tripper Technologies Pvt Ltd<br>
 </body></html>";
 
 	
@@ -52,20 +52,23 @@ Message:<br>".nl2br($message)."
 		//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 		
 		$mail->isSMTP();                                      // Set mailer to use SMTP
-		$mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
+		$mail->Host = 'smtp.sendgrid.net';  // Specify main and backup SMTP servers
 		$mail->SMTPAuth = true;                               // Enable SMTP authentication
-		$mail->Username = 'user@example.com';                 // SMTP username
-		$mail->Password = 'secret';                           // SMTP password
+		$mail->Username = 'dpareba';                 // SMTP username
+		$mail->Password = 'Redsu!!79';                           // SMTP password
 		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 		$mail->Port = 587;                                    // TCP port to connect to
 		
-		$mail->From = $_POST['email'];
-		$mail->FromName = $_POST['name'];
-		$mail->addAddress( 'user@example.com' );
+		//$mail->From = $_POST['email'];
+		$mail->From = 'info@trippertech.com';
+		//$mail->FromName = $_POST['name'];
+		$mail->FromName = 'Tripper Tech Portal';
+		$mail->addAddress('manan@tripperwifi.com');
+		$mail->addAddress('dilippareba@gmail.com');
 		
 		$mail->isHTML(true);                                  // Set email format to HTML
 		
-		$mail->Subject = 'Sample message from Apex';
+		$mail->Subject = 'Contact Form sent from Tripper Tech Web Portal';
 		$mail->Body    = $content;
 		
 		// If spam check has passed, attempt to send the mail

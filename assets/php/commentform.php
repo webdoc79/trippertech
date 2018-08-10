@@ -3,8 +3,8 @@
 /* VARIABLES */
 
 // Type in your email address to receive the mail
-$to				= "youremail@gmail.com";
-$subject	= "Sample message from Apex";
+$to				= "dilippareba@gmail.com";
+$subject	= "Sample message from Tripper";
 
 // If you wish to show a logo in the mail, paste the URL here.
 // For example: http://mywebsite.com/mylogo.png
