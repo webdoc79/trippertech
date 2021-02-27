@@ -54,8 +54,8 @@ Team Tripper Technologies Pvt Ltd<br>
 		$mail->isSMTP();                                      // Set mailer to use SMTP
 		$mail->Host = 'smtp.sendgrid.net';  // Specify main and backup SMTP servers
 		$mail->SMTPAuth = true;                               // Enable SMTP authentication
-		$mail->Username = 'dpareba';                 // SMTP username
-		$mail->Password = 'Redsu!!79';                           // SMTP password
+		$mail->Username = 'apikey';                 // SMTP username
+		$mail->Password = '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';                           // SMTP password
 		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 		$mail->Port = 587;                                    // TCP port to connect to
 		
